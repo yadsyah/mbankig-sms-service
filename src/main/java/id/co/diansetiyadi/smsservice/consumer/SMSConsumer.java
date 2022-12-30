@@ -23,7 +23,7 @@ public class SMSConsumer {
         this.gson = gson;
     }
 
-    @KafkaListener(topics = SMSConstant.TOPIC_NOTIFICATION_SMS, groupId = "notification")
+    @KafkaListener(topics = SMSConstant.TOPIC_NOTIFICATION_SMS, groupId = "notification_sms")
     public void consumeMessagesSMS(String message) {
 
         log.info("Consume Kafka : {}", gson.toJson(message));

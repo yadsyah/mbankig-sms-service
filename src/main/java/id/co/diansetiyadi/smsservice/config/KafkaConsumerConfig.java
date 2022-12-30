@@ -20,7 +20,7 @@ public class KafkaConsumerConfig {
         Map<String, Object> config = new HashMap<>();
 
         // Adding the Configuration
-        config.put(ConsumerConfig.GROUP_ID_CONFIG, "notification");
+        config.put(ConsumerConfig.GROUP_ID_CONFIG, "notification_sms");
         config.put(
                 ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
                 StringDeserializer.class);
